@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+  margin-bottom: 6rem;
+}
+
+.outer {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.inner.type-b {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.type-b .outer:nth-child(1) {
+  align-self: flex-start;
+}
+
+.type-b .outer:nth-child(3) {
+  align-self: flex-end;
+}
